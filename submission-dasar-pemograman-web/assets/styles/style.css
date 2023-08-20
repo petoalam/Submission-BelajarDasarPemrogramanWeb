@@ -1,0 +1,254 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #480048;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #350235;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px; 
+}
+
+nav {
+    background-color: #480048;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #ff04ff;
+    border-top: 2px solid #ff04ff;
+    position: relative; 
+    top: 0;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+    display: inline-block;
+    padding: 8px 15px;
+    border: 2px solid #980598;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #350235;
+    color: white;
+    border-color: #350235;
+}
+div ul {
+    display: flex;
+  }
+ div li {
+    list-style-type: none;
+    padding: 1rem;
+  }
+  div li a {
+    color: white;
+    text-decoration: none;
+  }
+  div li a:hover {
+    color: #333;
+  }
+  div ul {
+    background: none;
+    margin: 0;
+    text-align: center;
+    padding-left: 0;
+  }
+
+@media (max-width: 768px) {
+    .logo {
+        top: 10px;
+        left: 10px;
+    }
+    
+    nav {
+        padding: 10px 0;
+    }
+    
+    nav ul {
+        flex-direction: column; 
+    }
+    
+    nav li {
+        margin: 5px 0; 
+    }
+    
+    nav a {
+        padding: 8px 10px; 
+    }
+}
+
+main {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card {
+    padding: 20px;
+    background-color: #3a013a;
+    color: #f8f3f3;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(4, 185, 218, 0.1);
+    transition: transform 0.2s;
+}
+.profile-card {
+    padding: 20px;
+    background-color: #570257;
+    color: #f8f3f3;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(4, 185, 218, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #f8f3f3;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside:hover {
+    transform: translateY(-5px);
+}
+
+.profile img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.profile img:hover {
+    transform: scale(1.1); 
+}
+.profile h3 {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.profile table {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.profile th, .profile td {
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile th {
+    text-align: left;
+    font-weight: normal;
+    width: 40%;
+}
+
+.profile td {
+    text-align: right;
+    font-weight: bold;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #350235;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    margin: 0 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #ff04ff;
+    transition: background-color 0.3s;
+}
+
+.social-media a:hover {
+    background-color: #8f038f;
+}
+
+.social-media i {
+    font-size: 4vw; 
+    color: rgb(13, 12, 12);
+}
+
+footer {
+    text-align: center;
+    background-color: #980598;
+    color: white;
+    padding: 10px;
+}
